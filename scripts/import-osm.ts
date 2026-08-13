@@ -10,8 +10,42 @@
  *   OSM_DRY_RUN=1  DBに書き込まずログ出力だけ行う
  */
 
-import "dotenv/config";
+import dotenv from "dotenv";
+import path from "path";
+import https from "https";
+import { URL } from "url";
+dotenv.config({ path: path.resolve(process.cwd(), ".env.local") });
+dotenv.config();
+
 import { PrismaClient } from "@prisma/client";
+
+// undici（Node組み込みfetch）がIPv6を優先して失敗する環境向けに
+// https モジュールで IPv4 強制POSTするラッパー
+function httpsPost(urlStr: string, body: string, headers: Record<string, string>): Promise<string> {
+  return new Promise((resolve, reject) => {
+    const u = new URL(urlStr);
+    const req = https.request(
+      {
+        hostname: u.hostname,
+        path: u.pathname + u.search,
+        method: "POST",
+        headers: { ...headers, "Content-Length": Buffer.byteLength(body) },
+        family: 4, // IPv4 強制
+        timeout: 90_000,
+      },
+      (res) => {
+        const chunks: Buffer[] = [];
+        res.on("data", (c) => chunks.push(c));
+        res.on("end", () => resolve(Buffer.concat(chunks).toString()));
+        res.on("error", reject);
+      }
+    );
+    req.on("error", reject);
+    req.on("timeout", () => { req.destroy(); reject(new Error("request timeout")); });
+    req.write(body);
+    req.end();
+  });
+}
 
 const prisma = new PrismaClient();
 
@@ -65,20 +99,12 @@ out body;
 `.trim();
 
   console.log(`Overpass API にリクエスト中... (bbox: ${bbox})`);
-  const res = await fetch(OVERPASS_URL, {
-    method: "POST",
-    headers: {
-      "Content-Type": "text/plain",
-      "User-Agent": "gomi-map-osm-importer/1.0",
-    },
-    body: query,
+  const text = await httpsPost(OVERPASS_URL, query, {
+    "Content-Type": "text/plain",
+    "User-Agent": "gomi-map-osm-importer/1.0",
   });
 
-  if (!res.ok) {
-    throw new Error(`Overpass API エラー: ${res.status} ${await res.text()}`);
-  }
-
-  const json: OverpassResponse = await res.json();
+  const json: OverpassResponse = JSON.parse(text);
   return json.elements;
 }
 

@@ -8,9 +8,12 @@
  *   OSM_DRY_RUN=1  DBに書き込まず件数確認だけ行う
  */
 
-import "dotenv/config";
-import * as fs from "fs";
+import dotenv from "dotenv";
 import * as path from "path";
+dotenv.config({ path: path.resolve(process.cwd(), ".env.local") });
+dotenv.config();
+
+import * as fs from "fs";
 import * as iconv from "iconv-lite";
 import { PrismaClient } from "@prisma/client";
 
