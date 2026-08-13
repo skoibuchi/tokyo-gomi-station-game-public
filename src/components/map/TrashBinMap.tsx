@@ -19,6 +19,7 @@ export default function TrashBinMap({
   const mapRef = useRef<HTMLDivElement>(null);
   const leafletMap = useRef<import("leaflet").Map | null>(null);
   const markersRef = useRef<Map<string, import("leaflet").Marker>>(new Map());
+  const myLocationRef = useRef<{ lat: number; lng: number } | null>(null);
   const [bins, setBins] = useState<TrashBinData[]>([]);
 
   useEffect(() => {
@@ -40,10 +41,9 @@ export default function TrashBinMap({
 
       if (leafletMap.current) return;
 
-      // 全シードデータが視野に入る zoom12 で初期化
       const map = L.map(mapRef.current!, {
         center: [35.6812, 139.7500],
-        zoom: 12,
+        zoom: 16,
       });
 
       L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
@@ -61,16 +61,16 @@ export default function TrashBinMap({
       if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(
           (pos) => {
-            map.setView([pos.coords.latitude, pos.coords.longitude], 16);
-            L.circleMarker([pos.coords.latitude, pos.coords.longitude], {
+            const { latitude: lat, longitude: lng } = pos.coords;
+            myLocationRef.current = { lat, lng };
+            map.setView([lat, lng], 16);
+            L.circleMarker([lat, lng], {
               radius: 8,
               fillColor: "#3b82f6",
               color: "#fff",
               weight: 2,
               fillOpacity: 1,
-            })
-              .addTo(map)
-              .bindPopup("現在地");
+            }).addTo(map).bindPopup("現在地");
           },
           () => {}
         );
@@ -164,6 +164,18 @@ export default function TrashBinMap({
     return "#6b7280";
   }
 
+  function handleLocate() {
+    if (!navigator.geolocation) return;
+    navigator.geolocation.getCurrentPosition(
+      (pos) => {
+        const { latitude: lat, longitude: lng } = pos.coords;
+        myLocationRef.current = { lat, lng };
+        leafletMap.current?.setView([lat, lng], 16);
+      },
+      () => alert("現在地を取得できませんでした。\nHTTPSで接続しているか確認してください。")
+    );
+  }
+
   return (
     <div className="relative w-full h-full">
       <link
@@ -171,6 +183,16 @@ export default function TrashBinMap({
         href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
       />
       <div ref={mapRef} className="w-full h-full rounded-lg" />
+
+      {/* 現在地ボタン */}
+      <button
+        onClick={handleLocate}
+        className="absolute bottom-14 right-4 bg-white shadow-lg rounded-full w-10 h-10 flex items-center justify-center z-[1000] border border-gray-200 hover:bg-gray-50 active:bg-gray-100 text-xl"
+        title="現在地へ移動"
+      >
+        📍
+      </button>
+
       <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur rounded-lg p-2 text-xs text-gray-600 z-[1000]">
         ゴミ箱: {bins.length}件表示中
       </div>
