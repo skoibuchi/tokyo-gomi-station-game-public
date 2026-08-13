@@ -1,0 +1,90 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id          String   @id @default(cuid())
+  name        String
+  email       String   @unique
+  totalPoints Int      @default(0)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  reports     Report[]
+  pointLogs   PointLog[]
+}
+
+model TrashBin {
+  id          String   @id @default(cuid())
+  lat         Float
+  lng         Float
+  name        String?
+  description String?
+  binType      String   @default("general") // general, recycle, pet_bottle, etc.
+  level        Int      @default(1)
+  exp          Int      @default(0)   // 後方互換用（総合EXPキャッシュ）
+  usageExp     Int      @default(0)   // 利用経験値
+  knowledgeExp Int      @default(0)   // 知識経験値
+  supportExp   Int      @default(0)   // 応援経験値
+  useCount     Int      @default(0)
+  imageUrl    String?
+  status      String   @default("active") // active, pending, inactive
+  source      String   @default("user")   // osm, user
+  osmId       String?  @unique
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  reports     Report[]
+}
+
+model Report {
+  id          String   @id @default(cuid())
+  userId      String
+  trashBinId  String?  // nullの場合は新規ゴミ箱報告
+  lat         Float
+  lng         Float
+  imageUrl    String?
+  reportType  String   @default("use") // use, new_discovery
+  aiResult    String?  // JSON: AI判定結果
+  aiPassed    Boolean  @default(false)
+  pointsEarned Int     @default(0)
+  status      String   @default("pending") // pending, approved, rejected
+  createdAt   DateTime @default(now())
+
+  user        User     @relation(fields: [userId], references: [id])
+  trashBin    TrashBin? @relation(fields: [trashBinId], references: [id])
+}
+
+model Spot {
+  id          String   @id @default(cuid())
+  name        String
+  lat         Float
+  lng         Float
+  address     String   @default("")
+  spotType    String   @default("")   // 建造物, 絵画, など（文化財）/ ""（施設）
+  category    String                  // cultural / facility
+  sourceId    String?  @unique        // 元データのNO（重複防止）
+  description String   @default("")  // 説明文
+  openTime    String   @default("")  // 開始時間
+  closeTime   String   @default("")  // 終了時間
+  hoursNote   String   @default("")  // 利用可能日時特記事項
+  url         String   @default("")  // 公式URL
+  fee         String   @default("")  // 料金情報（施設のみ）
+
+  @@index([lat, lng])
+}
+
+model PointLog {
+  id        String   @id @default(cuid())
+  userId    String
+  points    Int
+  reason    String
+  createdAt DateTime @default(now())
+
+  user      User     @relation(fields: [userId], references: [id])
+}
