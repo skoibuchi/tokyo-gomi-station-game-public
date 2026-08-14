@@ -2,6 +2,7 @@
 import { useEffect, useRef, useState } from "react";
 import { TrashBinData } from "@/types";
 import { getTrashBinLevelName, getTrashBinImage } from "@/lib/gameLogic";
+import { ChevronDown, ChevronUp } from "lucide-react";
 
 interface TrashBinMapProps {
   onBinSelect: (bin: TrashBinData) => void;
@@ -23,6 +24,7 @@ export default function TrashBinMap({
   const markersRef = useRef<Map<string, import("leaflet").Marker>>(new Map());
   const myLocationRef = useRef<{ lat: number; lng: number } | null>(null);
   const [bins, setBins] = useState<TrashBinData[]>([]);
+  const [legendOpen, setLegendOpen] = useState(false);
 
   useEffect(() => {
     if (typeof window === "undefined" || !mapRef.current) return;
@@ -210,52 +212,64 @@ export default function TrashBinMap({
       </button>
 
       {/* 凡例 */}
-      <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur rounded-lg p-2 text-xs text-gray-600 z-[1000] space-y-1.5">
-        {/* 危険度（背景色） */}
-        <div className="space-y-0.5">
-          <p className="font-semibold text-gray-500 leading-none">溢れリスク</p>
-          <div className="flex items-center gap-1">
-            <span className="inline-block w-3.5 h-3.5 rounded-full border border-gray-300" style={{ background: "#fecaca" }} />
-            <span>高危険度</span>
+      <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur rounded-lg text-xs text-gray-600 z-[1000]">
+        {/* ヘッダー（常時表示・タップで開閉） */}
+        <button
+          onClick={() => setLegendOpen((v) => !v)}
+          className="flex items-center gap-1.5 w-full px-2.5 py-1.5 font-semibold text-gray-600"
+        >
+          {legendOpen ? <ChevronDown size={13} /> : <ChevronUp size={13} />}
+          <span>凡例</span>
+          <span className="ml-auto text-gray-400 font-normal">ゴミ箱: {bins.length}件</span>
+        </button>
+
+        {/* 折りたたみ内容 */}
+        {legendOpen && (
+          <div className="px-2.5 pb-2 space-y-1.5 border-t border-gray-200">
+            {/* 危険度（背景色） */}
+            <div className="space-y-0.5 pt-1.5">
+              <p className="font-semibold text-gray-500 leading-none">溢れリスク（背景）</p>
+              <div className="flex items-center gap-1">
+                <span className="inline-block w-3.5 h-3.5 rounded-full border border-gray-300" style={{ background: "#fecaca" }} />
+                <span>高危険度</span>
+              </div>
+              <div className="flex items-center gap-1">
+                <span className="inline-block w-3.5 h-3.5 rounded-full border border-gray-300" style={{ background: "#fef08a" }} />
+                <span>要注意</span>
+              </div>
+              <div className="flex items-center gap-1">
+                <span className="inline-block w-3.5 h-3.5 rounded-full border border-gray-300" style={{ background: "white" }} />
+                <span>安全</span>
+              </div>
+            </div>
+            {/* 区切り線 */}
+            <div className="border-t border-gray-200" />
+            {/* レベル（ボーダー色） */}
+            <div className="space-y-0.5">
+              <p className="font-semibold text-gray-500 leading-none">レベル（枠色）</p>
+              <div className="flex items-center gap-1">
+                <span className="inline-block w-3.5 h-3.5 rounded-full" style={{ border: "2px solid #f59e0b" }} />
+                <span>Lv.50+</span>
+              </div>
+              <div className="flex items-center gap-1">
+                <span className="inline-block w-3.5 h-3.5 rounded-full" style={{ border: "2px solid #8b5cf6" }} />
+                <span>Lv.30+</span>
+              </div>
+              <div className="flex items-center gap-1">
+                <span className="inline-block w-3.5 h-3.5 rounded-full" style={{ border: "2px solid #10b981" }} />
+                <span>Lv.10+</span>
+              </div>
+              <div className="flex items-center gap-1">
+                <span className="inline-block w-3.5 h-3.5 rounded-full" style={{ border: "2px solid #3b82f6" }} />
+                <span>Lv.5+</span>
+              </div>
+              <div className="flex items-center gap-1">
+                <span className="inline-block w-3.5 h-3.5 rounded-full" style={{ border: "2px solid #6b7280" }} />
+                <span>Lv.1〜4</span>
+              </div>
+            </div>
           </div>
-          <div className="flex items-center gap-1">
-            <span className="inline-block w-3.5 h-3.5 rounded-full border border-gray-300" style={{ background: "#fef08a" }} />
-            <span>要注意</span>
-          </div>
-          <div className="flex items-center gap-1">
-            <span className="inline-block w-3.5 h-3.5 rounded-full border border-gray-300" style={{ background: "white" }} />
-            <span>安全</span>
-          </div>
-        </div>
-        {/* 区切り線 */}
-        <div className="border-t border-gray-200" />
-        {/* レベル（ボーダー色） */}
-        <div className="space-y-0.5">
-          <p className="font-semibold text-gray-500 leading-none">レベル</p>
-          <div className="flex items-center gap-1">
-            <span className="inline-block w-3.5 h-3.5 rounded-full" style={{ border: "2px solid #f59e0b" }} />
-            <span>Lv.50+</span>
-          </div>
-          <div className="flex items-center gap-1">
-            <span className="inline-block w-3.5 h-3.5 rounded-full" style={{ border: "2px solid #8b5cf6" }} />
-            <span>Lv.30+</span>
-          </div>
-          <div className="flex items-center gap-1">
-            <span className="inline-block w-3.5 h-3.5 rounded-full" style={{ border: "2px solid #10b981" }} />
-            <span>Lv.10+</span>
-          </div>
-          <div className="flex items-center gap-1">
-            <span className="inline-block w-3.5 h-3.5 rounded-full" style={{ border: "2px solid #3b82f6" }} />
-            <span>Lv.5+</span>
-          </div>
-          <div className="flex items-center gap-1">
-            <span className="inline-block w-3.5 h-3.5 rounded-full" style={{ border: "2px solid #6b7280" }} />
-            <span>Lv.1〜4</span>
-          </div>
-        </div>
-        {/* 区切り線 */}
-        <div className="border-t border-gray-200" />
-        <p className="text-gray-400">ゴミ箱: {bins.length}件表示中</p>
+        )}
       </div>
     </div>
   );
