@@ -32,6 +32,7 @@ model TrashBin {
   knowledgeExp Int      @default(0)   // 知識経験値
   supportExp   Int      @default(0)   // 応援経験値
   useCount     Int      @default(0)
+  riskScore    Float    @default(0)   // 危険度スコア（0.0〜1.0）
   imageUrl    String?
   status      String   @default("active") // active, pending, inactive
   source      String   @default("user")   // osm, user

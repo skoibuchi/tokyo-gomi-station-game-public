@@ -6,6 +6,7 @@ import { getTrashBinLevelName, getTrashBinImage } from "@/lib/gameLogic";
 interface TrashBinMapProps {
   onBinSelect: (bin: TrashBinData) => void;
   onMapClick: (lat: number, lng: number) => void;
+  onLocationUpdate?: (lat: number, lng: number) => void;
   selectedBinId?: string | null;
   refreshKey?: number;
 }
@@ -13,6 +14,7 @@ interface TrashBinMapProps {
 export default function TrashBinMap({
   onBinSelect,
   onMapClick,
+  onLocationUpdate,
   selectedBinId,
   refreshKey,
 }: TrashBinMapProps) {
@@ -63,6 +65,7 @@ export default function TrashBinMap({
           (pos) => {
             const { latitude: lat, longitude: lng } = pos.coords;
             myLocationRef.current = { lat, lng };
+            onLocationUpdate?.(lat, lng);
             map.setView([lat, lng], 16);
             L.circleMarker([lat, lng], {
               radius: 8,
@@ -119,9 +122,10 @@ export default function TrashBinMap({
       data.forEach((bin) => {
         const levelName = getTrashBinLevelName(bin.level);
         const imgSrc = getTrashBinImage(bin.level);
+        const bgColor = getRiskBgColor(bin.riskScore);
         const icon = L.divIcon({
           html: `<div style="
-            background: white;
+            background: ${bgColor};
             border: 2px solid ${getLevelColor(bin.level)};
             border-radius: 50%;
             width: 36px;
@@ -138,13 +142,18 @@ export default function TrashBinMap({
           popupAnchor: [0, -18],
         });
 
+        const riskLabel = bin.riskScore >= 0.5 ? "🔴 高危険度"
+          : bin.riskScore >= 0.2 ? "🟡 要注意"
+          : bin.riskScore > 0    ? "🟢 安全"
+          : "";
+
         const marker = L.marker([bin.lat, bin.lng], { icon })
           .addTo(map)
           .bindPopup(
             `<div style="min-width:160px">
               <b>${bin.name || "ゴミ箱"}</b><br/>
               <span>Lv.${bin.level} ${levelName}</span><br/>
-              <span>利用回数: ${bin.useCount}</span>
+              <span>利用回数: ${bin.useCount}</span>${riskLabel ? `<br/><span style="font-weight:bold">${riskLabel}</span>` : ""}
             </div>`
           )
           .on("click", () => onBinSelect(bin));
@@ -164,12 +173,19 @@ export default function TrashBinMap({
     return "#6b7280";
   }
 
+  function getRiskBgColor(riskScore: number): string {
+    if (riskScore >= 0.5) return "#fecaca"; // 赤：高危険度
+    if (riskScore >= 0.2) return "#fef08a"; // 黄：要注意
+    return "white";                          // 白：安全 or スコアなし
+  }
+
   function handleLocate() {
     if (!navigator.geolocation) return;
     navigator.geolocation.getCurrentPosition(
       (pos) => {
         const { latitude: lat, longitude: lng } = pos.coords;
         myLocationRef.current = { lat, lng };
+        onLocationUpdate?.(lat, lng);
         leafletMap.current?.setView([lat, lng], 16);
       },
       () => alert("現在地を取得できませんでした。\nHTTPSで接続しているか確認してください。")
@@ -193,8 +209,53 @@ export default function TrashBinMap({
         📍
       </button>
 
-      <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur rounded-lg p-2 text-xs text-gray-600 z-[1000]">
-        ゴミ箱: {bins.length}件表示中
+      {/* 凡例 */}
+      <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur rounded-lg p-2 text-xs text-gray-600 z-[1000] space-y-1.5">
+        {/* 危険度（背景色） */}
+        <div className="space-y-0.5">
+          <p className="font-semibold text-gray-500 leading-none">溢れリスク</p>
+          <div className="flex items-center gap-1">
+            <span className="inline-block w-3.5 h-3.5 rounded-full border border-gray-300" style={{ background: "#fecaca" }} />
+            <span>高危険度</span>
+          </div>
+          <div className="flex items-center gap-1">
+            <span className="inline-block w-3.5 h-3.5 rounded-full border border-gray-300" style={{ background: "#fef08a" }} />
+            <span>要注意</span>
+          </div>
+          <div className="flex items-center gap-1">
+            <span className="inline-block w-3.5 h-3.5 rounded-full border border-gray-300" style={{ background: "white" }} />
+            <span>安全</span>
+          </div>
+        </div>
+        {/* 区切り線 */}
+        <div className="border-t border-gray-200" />
+        {/* レベル（ボーダー色） */}
+        <div className="space-y-0.5">
+          <p className="font-semibold text-gray-500 leading-none">レベル</p>
+          <div className="flex items-center gap-1">
+            <span className="inline-block w-3.5 h-3.5 rounded-full" style={{ border: "2px solid #f59e0b" }} />
+            <span>Lv.50+</span>
+          </div>
+          <div className="flex items-center gap-1">
+            <span className="inline-block w-3.5 h-3.5 rounded-full" style={{ border: "2px solid #8b5cf6" }} />
+            <span>Lv.30+</span>
+          </div>
+          <div className="flex items-center gap-1">
+            <span className="inline-block w-3.5 h-3.5 rounded-full" style={{ border: "2px solid #10b981" }} />
+            <span>Lv.10+</span>
+          </div>
+          <div className="flex items-center gap-1">
+            <span className="inline-block w-3.5 h-3.5 rounded-full" style={{ border: "2px solid #3b82f6" }} />
+            <span>Lv.5+</span>
+          </div>
+          <div className="flex items-center gap-1">
+            <span className="inline-block w-3.5 h-3.5 rounded-full" style={{ border: "2px solid #6b7280" }} />
+            <span>Lv.1〜4</span>
+          </div>
+        </div>
+        {/* 区切り線 */}
+        <div className="border-t border-gray-200" />
+        <p className="text-gray-400">ゴミ箱: {bins.length}件表示中</p>
       </div>
     </div>
   );

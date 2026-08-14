@@ -11,6 +11,7 @@ export interface TrashBinData {
   knowledgeExp: number;
   supportExp: number;
   useCount: number;
+  riskScore: number;
   imageUrl?: string | null;
   status: string;
   source: string;

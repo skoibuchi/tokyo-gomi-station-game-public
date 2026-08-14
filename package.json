@@ -9,8 +9,10 @@
     "lint": "eslint",
     "db:seed": "npx tsx prisma/seed.ts",
     "db:seed:clear": "npx tsx prisma/seed.ts --clear",
-    "osm:import": "npx tsx scripts/import-osm.ts",
+    "osm:import": "NODE_OPTIONS='--dns-result-order=ipv4first' npx tsx scripts/import-osm.ts",
     "spots:import": "npx tsx scripts/import-spots.ts",
+    "stations:geocode": "NODE_OPTIONS='--dns-result-order=ipv4first' npx tsx scripts/geocode-stations.ts",
+    "risk:import": "npx tsx scripts/import-risk-score.ts",
     "postinstall": "prisma generate"
   },
   "prisma": {

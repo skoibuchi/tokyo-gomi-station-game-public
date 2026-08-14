@@ -25,14 +25,28 @@ interface ChatMessage {
   content: string;
 }
 
+// Haversine距離計算（メートル）
+function calcDistance(lat1: number, lng1: number, lat2: number, lng2: number): number {
+  const R = 6371000;
+  const dLat = (lat2 - lat1) * Math.PI / 180;
+  const dLng = (lng2 - lng1) * Math.PI / 180;
+  const a = Math.sin(dLat / 2) ** 2
+    + Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) * Math.sin(dLng / 2) ** 2;
+  return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+}
+
+const REQUIRE_PROXIMITY = process.env.NEXT_PUBLIC_REQUIRE_PROXIMITY === "true";
+const PROXIMITY_METERS  = parseInt(process.env.NEXT_PUBLIC_PROXIMITY_METERS || "50", 10);
+
 interface TrashBinDetailProps {
   bin: TrashBinData;
   onClose: () => void;
   onReport: () => void;
   onBinUpdate?: (bin: TrashBinData) => void;
+  myLocation?: { lat: number; lng: number } | null;
 }
 
-export default function TrashBinDetail({ bin, onClose, onReport, onBinUpdate }: TrashBinDetailProps) {
+export default function TrashBinDetail({ bin, onClose, onReport, onBinUpdate, myLocation }: TrashBinDetailProps) {
   const { user, setUser } = useUser();
 
   const levelName = getTrashBinLevelName(bin.level);
@@ -62,6 +76,18 @@ export default function TrashBinDetail({ bin, onClose, onReport, onBinUpdate }: 
     bin.level >= 30 ? "text-purple-500" :
     bin.level >= 10 ? "text-green-500" :
                       "text-blue-500";
+
+  // 近接チェック
+  const distanceM = myLocation
+    ? Math.round(calcDistance(myLocation.lat, myLocation.lng, bin.lat, bin.lng))
+    : null;
+  const isNearby = !REQUIRE_PROXIMITY || (distanceM !== null && distanceM <= PROXIMITY_METERS);
+  const reportDisabled = REQUIRE_PROXIMITY && !isNearby;
+  const reportDisabledReason = REQUIRE_PROXIMITY
+    ? distanceM === null
+      ? "現在地を取得してください"
+      : `ゴミ箱まで${distanceM}m（${PROXIMITY_METERS}m以内で利用可能）`
+    : null;
 
   // ゴミ箱が切り替わったら全リセット＆スポット取得
   useEffect(() => {
@@ -232,7 +258,18 @@ export default function TrashBinDetail({ bin, onClose, onReport, onBinUpdate }: 
 
         {/* ゴミ箱情報 */}
         <div className="text-sm text-gray-600 space-y-1">
-          <p><span className="font-semibold">種別:</span> {BIN_TYPE_LABELS[bin.binType] || bin.binType}</p>
+          <div className="flex items-center gap-2 flex-wrap">
+            <span><span className="font-semibold">種別:</span> {BIN_TYPE_LABELS[bin.binType] || bin.binType}</span>
+            {bin.riskScore > 0 && (
+              <span className={`text-xs font-bold px-2 py-0.5 rounded-full ${
+                bin.riskScore >= 0.5 ? "bg-red-100 text-red-600" :
+                bin.riskScore >= 0.2 ? "bg-yellow-100 text-yellow-700" :
+                                       "bg-green-100 text-green-700"
+              }`}>
+                {bin.riskScore >= 0.5 ? "🔴 高危険度" : bin.riskScore >= 0.2 ? "🟡 要注意" : "🟢 安全"}
+              </span>
+            )}
+          </div>
           {bin.source === "osm" && <p className="text-xs text-gray-400">📍 OpenStreetMapより</p>}
         </div>
 
@@ -345,11 +382,18 @@ export default function TrashBinDetail({ bin, onClose, onReport, onBinUpdate }: 
           )}
           <button
             onClick={onReport}
-            className={`${user ? "flex-1" : "w-full"} bg-green-500 hover:bg-green-600 text-white font-bold py-3 rounded-xl flex items-center justify-center gap-2 transition-colors`}
+            disabled={reportDisabled}
+            className={`${user ? "flex-1" : "w-full"} font-bold py-3 rounded-xl flex items-center justify-center gap-2 transition-colors
+              ${reportDisabled
+                ? "bg-gray-200 text-gray-400 cursor-not-allowed"
+                : "bg-green-500 hover:bg-green-600 text-white"}`}
           >
             🗑️ ゴミを捨てる (+10 pt)
           </button>
         </div>
+        {reportDisabledReason && (
+          <p className="text-center text-xs text-gray-400">{reportDisabledReason}</p>
+        )}
         {cheerMsg && (
           <p className={`text-center text-sm font-semibold ${cheered && !cheerMsg?.includes("エラー") ? "text-pink-600" : "text-orange-500"}`}>
             {cheerMsg}

@@ -23,6 +23,7 @@ const TrashBinMap = dynamic(() => import("@/components/map/TrashBinMap"), {
 export default function MapPage() {
   const { user, refreshUser } = useUser();
   const [selectedBin, setSelectedBin] = useState<TrashBinData | null>(null);
+  const [myLocation, setMyLocation] = useState<{ lat: number; lng: number } | null>(null);
   const [newBinLocation, setNewBinLocation] = useState<{ lat: number; lng: number } | null>(null);
   const [showReport, setShowReport] = useState(false);
   const [showNewBin, setShowNewBin] = useState(false);
@@ -72,6 +73,7 @@ export default function MapPage() {
         <TrashBinMap
           onBinSelect={handleBinSelect}
           onMapClick={handleMapClick}
+          onLocationUpdate={(lat, lng) => setMyLocation({ lat, lng })}
           selectedBinId={selectedBin?.id}
           refreshKey={refreshKey}
         />
@@ -112,6 +114,7 @@ export default function MapPage() {
           onClose={() => setSelectedBin(null)}
           onReport={() => setShowReport(true)}
           onBinUpdate={handleBinUpdate}
+          myLocation={myLocation}
         />
       )}
 
