@@ -1,5 +1,5 @@
 "use client";
-import { useState, useCallback } from "react";
+import { useState, useCallback, Suspense } from "react";
 import dynamic from "next/dynamic";
 import { TrashBinData } from "@/types";
 import TrashBinDetail from "@/components/TrashBinDetail";
@@ -7,17 +7,20 @@ import ReportPanel from "@/components/ReportPanel";
 import { Plus, Navigation } from "lucide-react";
 import { useUser } from "@/contexts/UserContext";
 
+const MapLoading = () => (
+  <div className="w-full h-full flex items-center justify-center bg-gray-100">
+    <div className="text-center space-y-2">
+      <div className="text-4xl animate-bounce">🗑️</div>
+      <p className="text-gray-500">地図を読み込み中...</p>
+    </div>
+  </div>
+);
+
 // Leafletはサーバーサイドでは動かないのでdynamic importする
+// useSearchParams を使うため Suspense でラップが必要
 const TrashBinMap = dynamic(() => import("@/components/map/TrashBinMap"), {
   ssr: false,
-  loading: () => (
-    <div className="w-full h-full flex items-center justify-center bg-gray-100">
-      <div className="text-center space-y-2">
-        <div className="text-4xl animate-bounce">🗑️</div>
-        <p className="text-gray-500">地図を読み込み中...</p>
-      </div>
-    </div>
-  ),
+  loading: MapLoading,
 });
 
 export default function MapPage() {
@@ -70,13 +73,15 @@ export default function MapPage() {
     <div className="relative flex flex-col h-[calc(100vh-57px)]">
       {/* 地図 */}
       <div className="flex-1 relative">
-        <TrashBinMap
-          onBinSelect={handleBinSelect}
-          onMapClick={handleMapClick}
-          onLocationUpdate={(lat, lng) => setMyLocation({ lat, lng })}
-          selectedBinId={selectedBin?.id}
-          refreshKey={refreshKey}
-        />
+        <Suspense fallback={<MapLoading />}>
+          <TrashBinMap
+            onBinSelect={handleBinSelect}
+            onMapClick={handleMapClick}
+            onLocationUpdate={(lat, lng) => setMyLocation({ lat, lng })}
+            selectedBinId={selectedBin?.id}
+            refreshKey={refreshKey}
+          />
+        </Suspense>
 
         {/* ユーザー未ログイン時の説明 */}
         {!user && (

@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Map, Trophy, User, LogOut } from "lucide-react";
+import { Map, Trophy, User, LogOut, Footprints } from "lucide-react";
 import { useUser } from "@/contexts/UserContext";
 import { useState, useRef, useEffect } from "react";
 
@@ -43,6 +43,18 @@ export default function Header() {
           >
             <Map size={16} />
             <span className="hidden sm:inline">マップ</span>
+          </Link>
+
+          <Link
+            href="/routes"
+            className={`flex items-center gap-1 px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
+              pathname === "/routes"
+                ? "bg-green-100 text-green-700"
+                : "text-gray-600 hover:bg-gray-100"
+            }`}
+          >
+            <Footprints size={16} />
+            <span className="hidden sm:inline">散歩</span>
           </Link>
 
           <Link
