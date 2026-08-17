@@ -55,4 +55,6 @@ export interface AiJudgmentResult {
   confidence: number;
   isValid: boolean;
   reason: string;
+  dirtLevel: number;    // 0=清潔 1=やや汚れ 2=汚れあり 3=かなり汚れ 4=散乱・溢れ
+  dirtReason: string;   // 汚染状態の説明
 }

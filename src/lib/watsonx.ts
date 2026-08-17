@@ -44,7 +44,7 @@ export async function judgeTrashBinImage(
     const token = await getIAMToken();
     const base64Data = ensureBase64(imageBase64);
 
-    const prompt = `You are an AI system that analyzes images to detect trash bins/waste bins.
+    const prompt = `You are an AI system that analyzes images of trash bins/waste bins.
 
 Please analyze this image and respond ONLY with a JSON object in this exact format:
 {
@@ -52,7 +52,9 @@ Please analyze this image and respond ONLY with a JSON object in this exact form
   "binType": "general" or "recycle" or "pet_bottle" or "can" or "glass" or "cigarette" or "mixed",
   "confidence": 0.0 to 1.0,
   "isValid": true or false,
-  "reason": "brief explanation in Japanese"
+  "reason": "brief explanation in Japanese",
+  "dirtLevel": 0 to 4,
+  "dirtReason": "brief explanation of cleanliness in Japanese"
 }
 
 Rules:
@@ -60,7 +62,14 @@ Rules:
 - binType: the type of trash bin (use "general" if unclear)
 - confidence: your confidence level (0.0-1.0)
 - isValid: true if this appears to be a legitimate report of a real trash bin
-- reason: short Japanese explanation`;
+- reason: short Japanese explanation
+- dirtLevel: cleanliness level of the trash bin and surrounding area
+    0 = clean, no litter visible
+    1 = slightly dirty, minor litter
+    2 = dirty, some litter around the bin
+    3 = very dirty, significant overflow or litter
+    4 = severely overflowing, litter scattered widely
+- dirtReason: short Japanese explanation of the cleanliness condition`;
 
     const response = await fetch(
       `${WATSONX_URL}/ml/v1/text/chat?version=2023-05-29`,
@@ -110,13 +119,22 @@ Rules:
     const jsonMatch = content.match(/\{[\s\S]*\}/);
     if (jsonMatch) {
       const result = JSON.parse(jsonMatch[0]);
-      return {
+      const judgment: AiJudgmentResult = {
         hasTrashBin: Boolean(result.hasTrashBin),
         binType: result.binType || "general",
         confidence: Number(result.confidence) || 0.5,
         isValid: Boolean(result.isValid),
         reason: result.reason || "判定完了",
+        dirtLevel: Number(result.dirtLevel ?? 0),
+        dirtReason: result.dirtReason || "状態不明",
       };
+      console.log(
+        `[AI判定] hasTrashBin=${judgment.hasTrashBin} binType=${judgment.binType}` +
+        ` confidence=${(judgment.confidence * 100).toFixed(0)}% isValid=${judgment.isValid}` +
+        ` reason="${judgment.reason}"` +
+        ` | dirtLevel=${judgment.dirtLevel}/4 dirtReason="${judgment.dirtReason}"`
+      );
+      return judgment;
     }
   } catch (error) {
     console.error("AI判定エラー:", error);
@@ -132,6 +150,8 @@ function getMockResult(): AiJudgmentResult {
     confidence: 0.85,
     isValid: true,
     reason: "ゴミ箱が確認されました（デモモード）",
+    dirtLevel: 0,
+    dirtReason: "清潔な状態です（デモモード）",
   };
 }
 

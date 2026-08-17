@@ -112,7 +112,7 @@ export async function POST(request: NextRequest) {
     },
   });
 
-  // ゴミ箱の3種EXPを加算（既存ゴミ箱の場合）
+  // ゴミ箱の3種EXPを加算 & dirtLevelをriskScoreに反映（既存ゴミ箱の場合）
   let leveledUp = false;
   let updatedBin = null;
   if (trashBinId) {
@@ -125,7 +125,7 @@ export async function POST(request: NextRequest) {
       const isFirstVisit = !prevReport;
 
       const addUsage     = EXP_GAIN.usage_use + (isFirstVisit ? EXP_GAIN.usage_first_visit : 0);
-      const addKnowledge = hasImage ? EXP_GAIN.knowledge_photo : 0; // 写真ありの場合のみ知識EXP
+      const addKnowledge = hasImage ? EXP_GAIN.knowledge_photo : 0;
       const addSupport   = 0;
 
       const result = calcLevelUp(
@@ -133,6 +133,22 @@ export async function POST(request: NextRequest) {
         addUsage, addKnowledge, addSupport
       );
       leveledUp = result.leveledUp;
+
+      // 写真がある場合 dirtLevel をriskScoreに反映
+      // 既存スコアと移動平均（直近投稿を30%の重みで反映）
+      const dirtLevel: number = aiResult?.dirtLevel ?? 0;
+      const dirtBonus = dirtLevel / 4 * 0.3; // 最大+0.3の加算
+      const newRiskScore = hasImage
+        ? Math.min(1.0, Math.round((bin.riskScore * 0.7 + dirtBonus) * 1000) / 1000)
+        : bin.riskScore;
+
+      if (hasImage) {
+        console.log(
+          `[riskScore更新] ${bin.name || bin.id}: ${bin.riskScore} → ${newRiskScore}` +
+          ` (dirtLevel=${dirtLevel}, dirtBonus=${dirtBonus.toFixed(3)})`
+        );
+      }
+
       updatedBin = await prisma.trashBin.update({
         where: { id: trashBinId },
         data: {
@@ -142,6 +158,7 @@ export async function POST(request: NextRequest) {
           exp:          result.newTotalExp,
           level:        result.newLevel,
           useCount:     { increment: 1 },
+          ...(hasImage && { riskScore: newRiskScore }),
         },
       });
     }
