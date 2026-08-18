@@ -20,8 +20,8 @@ async function saveImageFile(
   const ext = mimeType.includes("png") ? "png" : mimeType.includes("gif") ? "gif" : "jpg";
   const filename = `${Date.now()}-${Math.random().toString(36).slice(2, 8)}.${ext}`;
   const dir = path.join(process.cwd(), "public", "uploads", groupId);
-  await mkdir(dir, { recursive: true });
-  await writeFile(path.join(dir, filename), Buffer.from(imageBase64, "base64"));
+  await mkdir(dir, { recursive: true, mode: 0o755 });
+  await writeFile(path.join(dir, filename), Buffer.from(imageBase64, "base64"), { mode: 0o644 });
   return `/uploads/${groupId}/${filename}`;
 }
 
