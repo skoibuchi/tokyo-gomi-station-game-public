@@ -5,6 +5,11 @@ import { calcLevelUp, EXP_GAIN, POINTS } from "@/lib/gameLogic";
 import { writeFile, mkdir, rename } from "fs/promises";
 import path from "path";
 
+// 画像Base64を含むリクエストのためボディサイズ制限を緩和
+export const config = {
+  api: { bodyParser: { sizeLimit: "10mb" } },
+};
+
 // Base64画像をファイルに保存して公開URLパスを返す
 // 保存先: public/uploads/{trashBinId or "new"}/{timestamp}-{random}.{ext}
 async function saveImageFile(
