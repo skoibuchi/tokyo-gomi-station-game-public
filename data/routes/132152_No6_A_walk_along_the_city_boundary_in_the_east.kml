@@ -1,0 +1,2195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>No.6 東の市境散歩／No. 6 A walk along the city boundary in the east</name>
+    <description/>
+    <Style id="icon-1499-FFEA00-normal">
+      <IconStyle>
+        <color>ff00eaff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1499-FFEA00-highlight">
+      <IconStyle>
+        <color>ff00eaff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1499-FFEA00">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1499-FFEA00-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1499-FFEA00-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1500-FFEA00-normal">
+      <IconStyle>
+        <color>ff00eaff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1500-FFEA00-highlight">
+      <IconStyle>
+        <color>ff00eaff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1500-FFEA00">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1500-FFEA00-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1500-FFEA00-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1500-FFEA00-nodesc-normal">
+      <IconStyle>
+        <color>ff00eaff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1500-FFEA00-nodesc-highlight">
+      <IconStyle>
+        <color>ff00eaff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1500-FFEA00-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1500-FFEA00-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1500-FFEA00-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1611-FFEA00-normal">
+      <IconStyle>
+        <color>ff00eaff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1611-FFEA00-highlight">
+      <IconStyle>
+        <color>ff00eaff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1611-FFEA00">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1611-FFEA00-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1611-FFEA00-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1667-FFEA00-normal">
+      <IconStyle>
+        <color>ff00eaff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1667-FFEA00-highlight">
+      <IconStyle>
+        <color>ff00eaff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1667-FFEA00">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1667-FFEA00-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1667-FFEA00-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1716-FFEA00-normal">
+      <IconStyle>
+        <color>ff00eaff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1716-FFEA00-highlight">
+      <IconStyle>
+        <color>ff00eaff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1716-FFEA00">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1716-FFEA00-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1716-FFEA00-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1720-FFEA00-normal">
+      <IconStyle>
+        <color>ff00eaff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1720-FFEA00-highlight">
+      <IconStyle>
+        <color>ff00eaff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1720-FFEA00">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1720-FFEA00-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1720-FFEA00-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1720-FFEA00-nodesc-normal">
+      <IconStyle>
+        <color>ff00eaff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1720-FFEA00-nodesc-highlight">
+      <IconStyle>
+        <color>ff00eaff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1720-FFEA00-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1720-FFEA00-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1720-FFEA00-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1810-DB4436-nodesc-normal">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1810-DB4436-nodesc-highlight">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1810-DB4436-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1810-DB4436-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1810-DB4436-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1842-FFEA00-nodesc-normal">
+      <IconStyle>
+        <color>ff00eaff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1842-FFEA00-nodesc-highlight">
+      <IconStyle>
+        <color>ff00eaff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1842-FFEA00-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1842-FFEA00-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1842-FFEA00-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-0288D1-nodesc-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-0288D1-nodesc-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-0288D1-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-0288D1-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-0288D1-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-DB4436-normal">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-DB4436-highlight">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-DB4436">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-DB4436-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-DB4436-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-DB4436-nodesc-normal">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-DB4436-nodesc-highlight">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-DB4436-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-DB4436-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-DB4436-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-E65100-nodesc-normal">
+      <IconStyle>
+        <color>ff0051e6</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-E65100-nodesc-highlight">
+      <IconStyle>
+        <color>ff0051e6</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-E65100-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-E65100-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-E65100-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-FF5252-4294-nodesc-normal">
+      <LineStyle>
+        <color>ff5252ff</color>
+        <width>4.294</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="line-FF5252-4294-nodesc-highlight">
+      <LineStyle>
+        <color>ff5252ff</color>
+        <width>6.441</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="line-FF5252-4294-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-FF5252-4294-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-FF5252-4294-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name>No.6 東の市境散歩／No. 6 A walk along the city boundary in the east</name>
+      <Placemark>
+        <name>スタート／Start</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            139.446724,35.6989696,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>国立駅南口／Kunitachi Sta. South Exit</name>
+        <description>三角駅舎は駅前に復元を目指しています／The former triangular-roof station building is planned to be restored in front of the station</description>
+        <styleUrl>#icon-1716-FFEA00</styleUrl>
+        <Point>
+          <coordinates>
+            139.4463037,35.6990706,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>国分寺崖線　市境の階段／Stairs on the city boundary along Kokubunji cliff line</name>
+        <description><![CDATA[<img src="https://lh4.googleusercontent.com/hANT1QnjtFy5HjqSN4lc3BJvqSEPD9Uo8F87c0d0xlwKdGJzxcNeD_tnwMdYnSMq6IBETHq3uWkFmdYWk1_tCpTykl5s4ILvAPEqBKdgIFoxGuIVDNTbmdBvNA" height="200" width="auto" /><br><br>まちと人をつなぐ階段<br>線路寄りの道に新しい階段が設けられ、国立市と国分寺市を結んでいます。このハケを上る石段に続き、線路際の階段を上れば、眼下に中央線の線路が広がります。／Stairs connecting the cities and people<br>The stairs, newly constructed on the road close to the railway track, connect Kunitachi City and Kokubunji City. If you walk up the stone stairs along the cliff and the stairs along the railway track, the view opens up to include the JR Chuo Line railway track.]]></description>
+        <styleUrl>#icon-1500-FFEA00</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://lh4.googleusercontent.com/hANT1QnjtFy5HjqSN4lc3BJvqSEPD9Uo8F87c0d0xlwKdGJzxcNeD_tnwMdYnSMq6IBETHq3uWkFmdYWk1_tCpTykl5s4ILvAPEqBKdgIFoxGuIVDNTbmdBvNA</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            139.4506345,35.6990344,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>東1-10 市境／City boundary at Higashi 1-10</name>
+        <styleUrl>#icon-1500-FFEA00-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            139.452302,35.697609,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>應善寺／Ozen-ji Temple</name>
+        <description><![CDATA[<img src="https://lh4.googleusercontent.com/kCnlqsyb3wkdfzPs7k22UZpNUJTFjRIcTi0neB9-R1_5pYege9mrZnU6i0wqTGdnEw72Y0K7z2-v_8WbrGQMP-U-YbraStyneb8EjXjaIihQR3XF7ZKv3UmKkA" height="200" width="auto" /><br><br>應善寺の三重塔<br>旭通りの應善寺は、もとは築地にあり、関東大震災により国立に移転しました。<br>コンクリート製の本堂の屋上に、立派な木造銅板葺きの三重塔と鐘楼が建っています。昭和５５年建立で、蒼く緑青が吹いた屋根と、洗い出しの木部に古さのにじむ本格的な三重塔です。<br>正面からはあまりよく見えませんが、北側の通りからは全景が見られます。／Ozen-ji Temple three-storied pagoda<br>Ozen-ji Temple on Asahi-dori St. was relocated to Kunitachi from Tsukiji owing to the Great Kanto Earthquake. A magnificent wooden three-storied pagoda with a copper-shingled roof and a belfry stands on the rooftop of the concrete main hall building. The pagoda, built in 1980, is a quality three-storied construction with a copper roof with verdigris and weathered wooded parts that has a historical atmosphere. You cannot see the pagoda well from the front gate, but you can get the full view of it from the street in the north end.]]></description>
+        <styleUrl>#icon-1667-FFEA00</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://lh4.googleusercontent.com/kCnlqsyb3wkdfzPs7k22UZpNUJTFjRIcTi0neB9-R1_5pYege9mrZnU6i0wqTGdnEw72Y0K7z2-v_8WbrGQMP-U-YbraStyneb8EjXjaIihQR3XF7ZKv3UmKkA</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            139.4509987,35.6956656,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[ボンコえん／Bonko-en children's park]]></name>
+        <description><![CDATA[<img src="https://lh3.googleusercontent.com/nxNeeHBY2LLetMRyAyM8EjSZnWkvl4ObASAInTxwJHWBDkb2_zMr2mFhQXmeqqRuHO6JXHQFvoZbXnRB0UYwblT2HJ-ckEeXcM9sN5Ijsnrm2hTzt7HJcjBB" height="200" width="auto" /><br><br>ボンコえんとハケの坂<br>国立と国分寺の坂を行ったり来たりすると、児童公園（通称「ボンコえん」）が市境にあります。<br>ハケの斜面を上手に活かした公園です。国分寺市にさしかかる坂には、ベンチがさりげなく置かれており、ひと息入れる人への心配りがうかがえます。／Bonko-en children's park and sloping road along the cliff <br>When you go back and forth along sloping roads between Kunitachi and Kokubunji, you will find a children's park called Bonko-en at the city boundary line. It was developed making use of the slope of the cliff line. There is a bench discreetly placed on the sloping road where you enter Kokubunji City, showing consideration for those who take a rest here.<br><br><img src="https://lh4.googleusercontent.com/jrHbYxUnEjZ8Wn4Cvg4sUxWGYrgqiWKazC9OHfnuV0LVG1Wl5L_XtvDUxVQ31T05NiP3iJikChA1R5P3HvtG71CWe-GSH9AVOmgWXVRi3cQgovyMtHtxN_W861w" height="200" width="auto" />]]></description>
+        <styleUrl>#icon-1720-FFEA00</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://lh3.googleusercontent.com/nxNeeHBY2LLetMRyAyM8EjSZnWkvl4ObASAInTxwJHWBDkb2_zMr2mFhQXmeqqRuHO6JXHQFvoZbXnRB0UYwblT2HJ-ckEeXcM9sN5Ijsnrm2hTzt7HJcjBB https://lh4.googleusercontent.com/jrHbYxUnEjZ8Wn4Cvg4sUxWGYrgqiWKazC9OHfnuV0LVG1Wl5L_XtvDUxVQ31T05NiP3iJikChA1R5P3HvtG71CWe-GSH9AVOmgWXVRi3cQgovyMtHtxN_W861w</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            139.454142,35.695488,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>白明坂(国分寺市)／Shirami-zaka sloping road(Kokubunji City)</name>
+        <description><![CDATA[<img src="https://lh6.googleusercontent.com/lq6HWp36ISYx8ynQTuyj06r8NxGYzokVd_-o1vpvfZr0G6M7TxT8CVbAN5_q3oDy5eC4x1fOdNN3KsyN0qnIaFuAGzUbCexYDDdMPSjs3FrUToXTnwBLHqhr" height="200" width="auto" /><br><br>二つの白明坂<br>国分寺崖線に沿って、国分寺市内藤に一つ目、府中市との境にも二つ目の白明坂があります。<br>新田義貞が倒幕の兵を挙げた元弘三年（1333）、分倍河原の鎌倉幕府軍の本陣への夜討ちのためこの地で休息、鶏の鳴き声に夜が明けたのを知り、時を失した故事にちなんで名付けられた坂です。<br>この日の戦に破れた新田軍は、翌日再び分倍河原を攻め、鎌倉幕府は滅亡への途を進むことになりました。少し離れた二つの坂、どちらが正しいかは別として、この辺りを坂東武士が駆け抜けた歴史に思いを馳せるのも一興でしょう。／Two Shirami-zaka sloping roads<br>Along the Kokubunji Cliff Line, there are two Shirami-zaka sloping roads: the one in Naito, Kokubunji City and the other on the boundary with Fuchu City. It is said the slope name originated from a historical event where Yoshisada Nitta raised his army in 1333, and they took a rest at this place to prepare for a night attack on the headquarters of Kamakura Shogunate force in Bubaigawara, but they realized that they had mistimed the attack when they heard the sound of a cock crowing in the morning. After being defeated in that battle, they again attacked the Shogunate force in Bubaigawara and won, which led to the fall of the Kamakura Shogunate. It is uncertain which of the two Shirami-zaka, located a little far each other, is the correct place of this historical event, but it will be interesting to think of the footsteps of these warriors born in Bando.<br><br><img src="https://lh6.googleusercontent.com/qyBK9jZbd_--Qo_i1hE9B0OEKbcouhjGRCMtYlG2TJso04xYf9zjGCR71NaBLG-KD1ykXBi0WNhl5flQZywSAuf2qiOPMBxmt6dGaP5FQkZIcNGwwUjXc55W" height="200" width="auto" />]]></description>
+        <styleUrl>#icon-1500-FFEA00</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://lh6.googleusercontent.com/lq6HWp36ISYx8ynQTuyj06r8NxGYzokVd_-o1vpvfZr0G6M7TxT8CVbAN5_q3oDy5eC4x1fOdNN3KsyN0qnIaFuAGzUbCexYDDdMPSjs3FrUToXTnwBLHqhr https://lh6.googleusercontent.com/qyBK9jZbd_--Qo_i1hE9B0OEKbcouhjGRCMtYlG2TJso04xYf9zjGCR71NaBLG-KD1ykXBi0WNhl5flQZywSAuf2qiOPMBxmt6dGaP5FQkZIcNGwwUjXc55W</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            139.456236,35.695039,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>たまらん坂／Tamaran-zaka sloping road</name>
+        <description><![CDATA[<img src="https://lh6.googleusercontent.com/FZl91p0vAKWauKnhIHmEG7vVtb41igI93v0nCN5KsP9-_LaOVgCnaLxIAFNNawRks_jXoSob3Q7I-DjJ1F8c69c0bXtPEXUD0IyVdfQuNfIgaRlbdyLEbSM1vw" height="200" width="auto" /><br><br>国立に大学町がつくられる際、国分寺駅からの資材運搬と通学路として造られ、国分寺崖線を通る坂です。<br>当時、中央線の電化は国分寺駅まで、国立駅は出来たものの電化されずに鉄道の便数が少なく、商大生は国分寺駅から大学までこの坂を歩いたそうです。<br>この名の由来は、長い急坂と悪路に、学生達やリヤカー、荷車を曳く人がこんな坂“たまらん”と言ったからとか。当て字で多摩蘭坂とも書きます。<br>平成21年に病没した忌野清志郎がこの付近に下宿したことがあり、清志郎が作った曲「多摩蘭坂」で知られるようになりました。／A sloping road along the Kokubunji Cliff Line constructed when university town was developed here in Kunitachi, as a road to transport materials for constructing Tokyo University of Commerce (current Hitotsubashi Univ.) and for students to commute. At that time, the operation of Chuo Line trains was electrified only up to Kokubunji Station. Although Kunitachi Sta. was constructed, trains were not electrified, and they did not run frequently. This meant that the students of the university had to walk from Kokubunji Sta. to the university along this sloping road. Some say that the students and people who walked up this slope pulling wagons and two-wheeled carts must have said "Tamaran," meaning "I can't stand" this long, steep slope, and this is where the slope name came from. This sloping road is also written in Chinese characters as a phonetic equivalent. This slope has become famous by a song "Tamaranzaka" by Kiyoshiro Imawano, who died in 2009 and lived in a boarding house around here.]]></description>
+        <styleUrl>#icon-1500-FFEA00</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://lh6.googleusercontent.com/FZl91p0vAKWauKnhIHmEG7vVtb41igI93v0nCN5KsP9-_LaOVgCnaLxIAFNNawRks_jXoSob3Q7I-DjJ1F8c69c0bXtPEXUD0IyVdfQuNfIgaRlbdyLEbSM1vw</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            139.455991,35.694454,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>白明坂(府中市)／Shirami-zaka sloping road(Fuchu City)</name>
+        <description><![CDATA[<img src="https://lh4.googleusercontent.com/qwloBIPfGNudQbG8SmG7Khkb5IRu1KDbsOa7NWlClYTMEd87J-FOTaolwPkiHrCOv_kBQSASls4pm9RtDJuWlOdZ-yCWvLMAyWeLqBRJebjw2Os_end-_U4qUQ" height="200" width="auto" /><br><br>二つの白明坂<br>国分寺崖線に沿って、国分寺市内藤に一つ目、府中市との境にも二つ目の白明坂があります。<br>新田義貞が倒幕の兵を挙げた元弘三年（1333）、分倍河原の鎌倉幕府軍の本陣への夜討ちのためこの地で休息、鶏の鳴き声に夜が明けたのを知り、時を失した故事にちなんで名付けられた坂です。<br>この日の戦に破れた新田軍は、翌日再び分倍河原を攻め、鎌倉幕府は滅亡への途を進むことになりました。少し離れた二つの坂、どちらが正しいかは別として、この辺りを坂東武士が駆け抜けた歴史に思いを馳せるのも一興でしょう。／Two Shirami-zaka sloping roads<br>Along the Kokubunji Cliff Line, there are two Shirami-zaka sloping roads: the one in Naito, Kokubunji City and the other on the boundary with Fuchu City. It is said the slope name originated from a historical event where Yoshisada Nitta raised his army in 1333, and they took a rest at this place to prepare for a night attack on the headquarters of Kamakura Shogunate force in Bubaigawara, but they realized that they had mistimed the attack when they heard the sound of a cock crowing in the morning. After being defeated in that battle, they again attacked the Shogunate force in Bubaigawara and won, which led to the fall of the Kamakura Shogunate. It is uncertain which of the two Shirami-zaka, located a little far each other, is the correct place of this historical event, but it will be interesting to think of the footsteps of these warriors born in Bando.<br><br><img src="https://lh6.googleusercontent.com/_4ZaDpXmh3R7jNx4R46AfeURKELUttRF3Me4U8qD74AR_flan4OBvFciDCmxvErM0t_TidcDQOK9r8DA0n0HU-XSJebPxr4r0o_hOfofybe5u3GiLA_m09RI" height="200" width="auto" />]]></description>
+        <styleUrl>#icon-1500-FFEA00</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://lh4.googleusercontent.com/qwloBIPfGNudQbG8SmG7Khkb5IRu1KDbsOa7NWlClYTMEd87J-FOTaolwPkiHrCOv_kBQSASls4pm9RtDJuWlOdZ-yCWvLMAyWeLqBRJebjw2Os_end-_U4qUQ https://lh6.googleusercontent.com/_4ZaDpXmh3R7jNx4R46AfeURKELUttRF3Me4U8qD74AR_flan4OBvFciDCmxvErM0t_TidcDQOK9r8DA0n0HU-XSJebPxr4r0o_hOfofybe5u3GiLA_m09RI</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            139.459587,35.692187,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>見返り坂公園／Mikaerizaka Park</name>
+        <description><![CDATA[<img src="https://lh3.googleusercontent.com/Nqr87mofYuTzQBaD1tThdwRD_7P4ADWFqFdWMKrXq8-QtUuM5vkZhYu1GPwkNk_n8RHJtKeykAoNz0QJio71KPv__vuKbO7RUmJVeBsU4gAQuQrUXcEd1P85cw" height="200" width="auto" /><br><br>]]></description>
+        <styleUrl>#icon-1720-FFEA00</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://lh3.googleusercontent.com/Nqr87mofYuTzQBaD1tThdwRD_7P4ADWFqFdWMKrXq8-QtUuM5vkZhYu1GPwkNk_n8RHJtKeykAoNz0QJio71KPv__vuKbO7RUmJVeBsU4gAQuQrUXcEd1P85cw</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            139.4596536,35.6903389,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>せせらぎ公園／Seseragi Park</name>
+        <styleUrl>#icon-1720-FFEA00-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            139.4560363,35.6902423,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>拝島道／Haijima Road</name>
+        <description>拝島道は立川駅南口から東南に走るむかし道、市内では街の造成でなくなった道です。／Haijima Road is an old road going southeast from Tachikawa Sta. South Exit. Part of the road in the city was closed and used as land for urban development.</description>
+        <styleUrl>#icon-1500-FFEA00</styleUrl>
+        <Point>
+          <coordinates>
+            139.4557828,35.6881607,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>大学通り／Daigaku-dori Ave.</name>
+        <description>国高角／(Corner of Kunitachi High School)</description>
+        <styleUrl>#icon-1500-FFEA00</styleUrl>
+        <Point>
+          <coordinates>
+            139.447341,35.688486,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>江戸街道／Edo-kaido Road</name>
+        <styleUrl>#icon-1500-FFEA00-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            139.4465841,35.6872713,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>ゴール／Goal</name>
+        <styleUrl>#icon-1899-E65100-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            139.4478667,35.6872319,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>コース／Route</name>
+        <styleUrl>#line-FF5252-4294-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            139.446717,35.698898,0
+            139.447136,35.698908,0
+            139.448137,35.698946,0
+            139.449661,35.698992,0
+            139.450487,35.699018,0
+            139.450709,35.69902,0
+            139.450635,35.699215,0
+            139.45119,35.699203,0
+            139.451583,35.699208,0
+            139.452159,35.698606,0
+            139.451694,35.698221,0
+            139.451733,35.698192,0
+            139.451933,35.69836,0
+            139.452168,35.69814,0
+            139.452244,35.698078,0
+            139.452415,35.698059,0
+            139.452507,35.69807,0
+            139.452762,35.697805,0
+            139.45267,35.697747,0
+            139.452544,35.697703,0
+            139.452385,35.69767,0
+            139.452255,35.697663,0
+            139.452282,35.696958,0
+            139.452308,35.696258,0
+            139.451114,35.696219,0
+            139.449857,35.69618,0
+            139.450762,35.695502,0
+            139.45234,35.695552,0
+            139.453826,35.695601,0
+            139.454712,35.696192,0
+            139.455291,35.695663,0
+            139.456123,35.694869,0
+            139.456179,35.694881,0
+            139.456188,35.694986,0
+            139.45619,35.695054,0
+            139.456224,35.695052,0
+            139.456208,35.694881,0
+            139.456019,35.694405,0
+            139.456247,35.694404,0
+            139.45646,35.694262,0
+            139.456646,35.694134,0
+            139.456893,35.693946,0
+            139.457262,35.69362,0
+            139.457466,35.693492,0
+            139.457718,35.693332,0
+            139.458142,35.693062,0
+            139.458702,35.692693,0
+            139.459073,35.692427,0
+            139.459563,35.692147,0
+            139.459674,35.692197,0
+            139.459755,35.692068,0
+            139.459855,35.691899,0
+            139.459847,35.691451,0
+            139.459842,35.691223,0
+            139.459861,35.691031,0
+            139.45985,35.690731,0
+            139.45985,35.690607,0
+            139.459794,35.69,0
+            139.459185,35.690083,0
+            139.458986,35.69012,0
+            139.458579,35.690244,0
+            139.458283,35.69035,0
+            139.457926,35.690434,0
+            139.457633,35.690472,0
+            139.45732,35.690519,0
+            139.456824,35.690563,0
+            139.455864,35.690578,0
+            139.455788,35.689668,0
+            139.455757,35.689241,0
+            139.455734,35.688229,0
+            139.455225,35.688352,0
+            139.454692,35.688475,0
+            139.454353,35.688546,0
+            139.453649,35.688686,0
+            139.452619,35.688649,0
+            139.45015,35.68858,0
+            139.447341,35.688486,0
+            139.447404,35.68713,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>ウォーキングポイント／Recommended spots</name>
+      <Placemark>
+        <name>見事な竹塀／Exquisite bamboo fence</name>
+        <description><![CDATA[<img src="https://lh3.googleusercontent.com/LI-2AMP0kjajP3G6it4N4wKSBDm66Ov14LR_tuBY-NfhZItpbJZLqSPEBysWKM-abNGaWsZwjH2SqRMKn0yJ0EPY1V-cPXgOwJB0Stckfxq7kb8_MZN6VclZ" height="200" width="auto" /><br><br>]]></description>
+        <styleUrl>#icon-1499-FFEA00</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://lh3.googleusercontent.com/LI-2AMP0kjajP3G6it4N4wKSBDm66Ov14LR_tuBY-NfhZItpbJZLqSPEBysWKM-abNGaWsZwjH2SqRMKn0yJ0EPY1V-cPXgOwJB0Stckfxq7kb8_MZN6VclZ</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            139.4520378,35.6985537,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>供養塔／Kuyoto (Memorial stone monument)</name>
+        <description><![CDATA[<img src="https://lh6.googleusercontent.com/mplk4fdvPb450T2TK0bIyMbwvP03E-gGypoZ95SwW0pVgGpqkEihLQXjlD3ENeWDW9NH_qTmh03xuACD8OckVLobSAVtVE3T0h4Qxm_EnLFnBGxZzqFsiStA" height="200" width="auto" /><br><br>たまらん坂そばの道端に、供養塔が建っています。<br>出羽三山の名と坂東・秩父・西国・四国の札所霊場の名、および供養塔の三文字が刻まれ、道に面しているのではなく、北東に向かって建っています。霊場めぐりの途上、亡くなった方の供養塔とのことです。／A memorial stone monument stands on the roadside near Tamaran-zaka slope road. The names of three sacred mountains of Dewa and those of temple pilgrimage routes including Bando, Chichibu, Saigoku and Shikoku, and three characters representing "kuyoto" ("memorial tower") are engraved on the monument. It does not face the road, but faces northeast. It was built as a place to pray for persons who died on the pilgrimage.]]></description>
+        <styleUrl>#icon-1611-FFEA00</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://lh6.googleusercontent.com/mplk4fdvPb450T2TK0bIyMbwvP03E-gGypoZ95SwW0pVgGpqkEihLQXjlD3ENeWDW9NH_qTmh03xuACD8OckVLobSAVtVE3T0h4Qxm_EnLFnBGxZzqFsiStA</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            139.4560256,35.6946126,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>国分寺崖線／Kokubunji Cliff Line</name>
+        <description><![CDATA[<img src="https://lh3.googleusercontent.com/LbqHCsNWi0KusuoBmhZt8oCB5UR4Aqdx1t0ZIhHx2BvV4ZHiahSorEy6f6yGEoc42vgfic4oQyoOw6fIH3iivhaCz4yUb2mB4VPwqvSLYwfKsspefzTAkci4yA" height="200" width="auto" /><br><br>国分寺崖線から富士山を望みます。／View toward Mt. Fuji from Kokubunji Cliff Line]]></description>
+        <styleUrl>#icon-1499-FFEA00</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://lh3.googleusercontent.com/LbqHCsNWi0KusuoBmhZt8oCB5UR4Aqdx1t0ZIhHx2BvV4ZHiahSorEy6f6yGEoc42vgfic4oQyoOw6fIH3iivhaCz4yUb2mB4VPwqvSLYwfKsspefzTAkci4yA</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            139.4591189,35.692376,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>コンビニ／Convenience store</name>
+      <Placemark>
+        <name>コンビニ／Convenience store</name>
+        <styleUrl>#icon-1810-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            139.4472236,35.6984773,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>コンビニ／Convenience store</name>
+        <styleUrl>#icon-1810-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            139.4472038,35.698222,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>コンビニ／Convenience store</name>
+        <styleUrl>#icon-1810-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            139.4486116,35.6969925,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>コンビニ／Convenience store</name>
+        <styleUrl>#icon-1810-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            139.4555082,35.6884504,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>コンビニ／Convenience store</name>
+        <styleUrl>#icon-1810-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            139.4474452,35.6869893,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>交番／Police box</name>
+      <Placemark>
+        <name>交番／Police box</name>
+        <styleUrl>#icon-1842-FFEA00-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            139.4470823,35.6989589,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>みちのサイン塔／Street sign post</name>
+      <Placemark>
+        <name>「大学通り」みちのサイン塔／Street sign post at Daigaku-dori Ave.</name>
+        <styleUrl>#icon-1899-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            139.4467673,35.6982225,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>その他／Other</name>
+      <Placemark>
+        <name>南北計画線／North-south road</name>
+        <description>工事中／Under construction</description>
+        <styleUrl>#icon-1500-FFEA00</styleUrl>
+        <Point>
+          <coordinates>
+            139.448111,35.6990982,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>都立公園／Tokyo Metropolitan Parks and Gardens</name>
+      <Placemark>
+        <name>青山公園／Aoyama Park</name>
+        <description>https://www.tokyo-park.or.jp/park/format/index080.html</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.719001,35.66878,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>赤塚公園／Akatsuka Park</name>
+        <description>https://www.tokyo-park.or.jp/park/format/index005.html</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.656438,35.784676,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>秋留台公園／Akirudai Park</name>
+        <description>https://www.tokyo-park.or.jp/park/format/index053.html</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.300378,35.729686,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>井の頭恩賜公園／Inokashira Park</name>
+        <description>http://www.kensetsu.metro.tokyo.jp/jimusho/seibuk/inokashira/index.html</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.572418,35.699709,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>井の頭自然文化園／Inokashira Park Zoo</name>
+        <description><![CDATA[http://www.tokyo-zoo.net/zoo/ino/<br>入園料がかかります]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.57114,35.701161,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>上野恩賜公園／Ueno Park</name>
+        <description>http://www.kensetsu.metro.tokyo.jp/jimusho/toubuk/ueno/index_top.html</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.774626,35.713557,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>宇喜田公園／Ukita Park</name>
+        <description>http://tokyo-eastpark.com/ukita/</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.859905,35.674013,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>浮間公園／Ukima Park</name>
+        <description>https://www.tokyo-park.or.jp/park/format/index009.html</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.69261,35.794366,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>大泉中央公園／Oizumi-Chuo Park</name>
+        <description>https://www.tokyo-park.or.jp/park/format/index011.html</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.598339,35.775072,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>大神山公園／Ogamiyama Park</name>
+        <description>https://www.tokyo-park.or.jp/park/format/index097.html</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            142.19234,27.093509,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>大島小松川公園／Ojima Komatsugawa Park</name>
+        <description>http://tokyo-eastpark.com/ohjima/</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.850121,35.692631,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>大戸緑地／Oto Park</name>
+        <description>https://tamaparks.com/oto/</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.284962,35.615931,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>尾久の原公園／Ogunohara Park</name>
+        <description>http://tokyo-eastpark.com/ogunohara/</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.776902,35.751265,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>小山内裏公園／Oyamadairi Park</name>
+        <description>https://www.tokyo-park.or.jp/park/format/index064.html</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.367222,35.60619,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>小山田緑地／Oyamada Park</name>
+        <description>https://www.tokyo-park.or.jp/park/format/index063.html</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.416341,35.596709,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>恩賜上野動物園／Ueno Zoological Gardens</name>
+        <description><![CDATA[http://www.tokyo-zoo.net/zoo/ueno/<br>入園料がかかります]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.771103,35.716933,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>葛西臨海公園／Kasai Rinkai Park</name>
+        <description>https://www.tokyo-park.or.jp/park/format/index026.html</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.859287,35.642302,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>葛西臨海水族園／Tokyo Sea Life Park</name>
+        <description><![CDATA[http://www.tokyo-zoo.net/zoo/kasai/hours.html<br>入園料がかかります]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.862712,35.640085,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>亀戸中央公園／Kameido-Chuo Park</name>
+        <description>http://tokyo-eastpark.com/kameido/</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.838447,35.700432,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>砧公園／Kinuta Park</name>
+        <description>https://www.tokyo-park.or.jp/park/format/index004.html</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.62092,35.630255,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>木場公園／Kiba Park</name>
+        <description>https://www.tokyo-park.or.jp/park/format/index020.html</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.808097,35.677246,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>旧岩崎邸庭園／Kyu Iwasaki-tei Gardens</name>
+        <description><![CDATA[http://teien.tokyo-park.or.jp/contents/index035.html<br>入園料がかかります]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.76698,35.709377,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>旧芝離宮恩賜庭園／Kyu Shiba-rikyu Gardens</name>
+        <description><![CDATA[http://teien.tokyo-park.or.jp/contents/index029.html<br>入園料がかかります]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.758722,35.655171,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>旧古河庭園／Kyu Furukawa Gardens</name>
+        <description><![CDATA[http://teien.tokyo-park.or.jp/contents/index034.html<br>入園料がかかります]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.746237,35.742484,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>清澄庭園／Kiyosumi Gardens</name>
+        <description><![CDATA[http://teien.tokyo-park.or.jp/contents/index033.html<br>入園料がかかります]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.797526,35.680153,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>小石川後楽園／Koishikawa Korakuen Gardens</name>
+        <description><![CDATA[http://teien.tokyo-park.or.jp/contents/index030.html<br>入園料がかかります]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.749581,35.704709,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>小金井公園／Koganei Park</name>
+        <description>https://www.tokyo-park.or.jp/park/format/index050.html</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.517915,35.716572,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>駒沢オリンピック公園／Komazawa Olympic Park</name>
+        <description>https://www.tokyo-park.or.jp/park/format/index040.html</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.661508,35.6265,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>小宮公園／Komiya Park</name>
+        <description>https://tamaparks.com/komiya/</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.340813,35.673243,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>桜ヶ丘公園／Sakuragaoka Park</name>
+        <description>https://www.tokyo-park.or.jp/park/format/index065.html</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.460885,35.637255,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>狭山公園／Sayama Park</name>
+        <description>http://www.sayamaparks.com/sayama/</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.441601,35.762595,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>狭山・境緑道／Sayama Sakai Scenic Road</name>
+        <description>http://musashinoparks.com/kouen/sayama/</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.539859,35.713875,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>猿江恩賜公園／Sarue Park</name>
+        <description>http://tokyo-eastpark.com/sarueonshi/</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.818454,35.690754,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>汐入公園／Shioiri Park</name>
+        <description>http://www.tokyo-park.or.jp/park/format/index017.html</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.810656,35.736469,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>潮風公園／Shiokaze Park</name>
+        <description><![CDATA[http://www.tptc.co.jp/park/01_03<br>一部工事中の箇所あり]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.768882,35.624442,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>篠崎公園／Shinozaki Park</name>
+        <description>https://www.tokyo-park.or.jp/park/format/index025.html</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.897894,35.715888,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>芝公園／Shiba Park</name>
+        <description>https://www.tokyo-park.or.jp/park/format/index001.html</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.747834,35.65608,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>石神井公園／Shakujii Park</name>
+        <description>https://www.tokyo-park.or.jp/park/format/index006.html</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.596041,35.738753,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>城北中央公園／Johoku-Chuo Park</name>
+        <description>https://www.tokyo-park.or.jp/park/format/index022.html</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.67299,35.756017,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>神代植物公園／Jindai Botanical Gardens</name>
+        <description><![CDATA[https://www.tokyo-park.or.jp/park/format/index045.html<br>入園料がかかります]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.548343,35.670548,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>浅間山公園／Sengenyama Park</name>
+        <description>http://musashinoparks.com/kouen/sengenyama/</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.500813,35.680662,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>善福寺川緑地／Zenpukujigawa Park</name>
+        <description>https://www.tokyo-park.or.jp/park/format/index021.html</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.633213,35.692276,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>善福寺公園／Zenpukuji Park</name>
+        <description>https://www.tokyo-park.or.jp/park/format/index010.html</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.589825,35.715263,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>祖師谷公園／Soshigaya Park</name>
+        <description>https://www.tokyo-park.or.jp/park/format/index008.html</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.599095,35.654178,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>台場公園／Daiba Park</name>
+        <description>http://www.tptc.co.jp/park/01_02</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.772664,35.633906,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>滝山公園／Takiyama Park</name>
+        <description>https://tamaparks.com/takiyama/</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.329217,35.701066,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>玉川上水緑道／Tamagawajosui Scenic Road</name>
+        <description>http://musashinoparks.com/kouen/tamagawa/</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.602805,35.68131,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>多摩動物公園／Tama Zoological Park</name>
+        <description><![CDATA[http://www.tokyo-zoo.net/zoo/tama/<br>入園料がかかります]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.402052,35.64998,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>東京臨海広域防災公園／Tokyo Rinkai Disaster Prevention Park</name>
+        <description>http://www.tokyorinkai-koen.jp/</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.7944352,35.6355052,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>舎人公園／Toneri Park</name>
+        <description>https://www.tokyo-park.or.jp/park/format/index024.html</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.769571,35.797453,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>殿ヶ谷戸庭園／Tonogayato Gardens</name>
+        <description><![CDATA[http://teien.tokyo-park.or.jp/contents/index036.html<br>入園料がかかります]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.481865,35.698255,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>戸山公園／Toyama Park</name>
+        <description>https://www.tokyo-park.or.jp/park/format/index002.html</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.715056,35.705558,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>中川公園／Nakagawa Park</name>
+        <description>http://tokyo-eastpark.com/nakagawa/</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.846301,35.775373,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>中藤公園／Nakato Park</name>
+        <description>http://www.sayamaparks.com/nakato/</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.397355,35.761508,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>長沼公園／Naganuma Park</name>
+        <description>https://www.tokyo-park.or.jp/park/format/index067.html</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.368535,35.637743,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>野川公園／Nogawa Park</name>
+        <description>http://musashinoparks.com/kouen/nogawa/</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.525446,35.682834,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>野山北・六道山公園／Noyamakita-Rokudoyama Park</name>
+        <description>http://www.sayamaparks.com/noyama/</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.379253,35.765484,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>八国山緑地／Hachikokuyama Park</name>
+        <description>http://www.sayamaparks.com/hachikokuyama/</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.455835,35.767895,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>浜離宮恩賜庭園／Hama-rikyu Gardens</name>
+        <description><![CDATA[http://teien.tokyo-park.or.jp/contents/index028.html<br>入園料がかかります]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.763771,35.660173,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>東綾瀬公園／Higashi-Ayase Park</name>
+        <description>http://tokyo-eastpark.com/higashiayase/</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.833413,35.770226,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>東白鬚公園／Higashi-Shirahige Park</name>
+        <description>http://www.tokyo-park.or.jp/park/format/index012.html</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.81412,35.732842,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>東伏見公園／Higashi-Fushimi Park</name>
+        <description>https://musashinoparks.com/kouen/higashifushimi/</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.557245,35.728057,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>東村山中央公園／Higashimurayama-Chuo Park</name>
+        <description>http://www.tokyo-park.or.jp/park/format/index051.html</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.45983,35.747604,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>東大和公園／Higashiyamato Park</name>
+        <description>http://www.sayamaparks.com/higashiyamato/</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.43206,35.755681,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>東大和南公園／Higashiyamato-Minami Park</name>
+        <description>http://www.tokyo-park.or.jp/park/format/index052.html</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.422653,35.734034,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>光が丘公園／Hikarigaoka Park</name>
+        <description>https://www.tokyo-park.or.jp/park/format/index023.html</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.628552,35.767372,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>日比谷公園／Hibiya Park</name>
+        <description>https://www.tokyo-park.or.jp/park/format/index037.html</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.755596,35.672981,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>平山城址公園／Hirayama-joshi Park</name>
+        <description>https://www.tokyo-park.or.jp/park/format/index066.html</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.381524,35.639381,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>府中の森公園／Fuchunomori Park</name>
+        <description>http://www.tokyo-park.or.jp/park/format/index048.html</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.49206,35.677142,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>水元公園／Mizumoto Park</name>
+        <description>https://www.tokyo-park.or.jp/park/format/index041.html</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.870477,35.791678,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>向島百花園／Mukojima-Hyakkaen Gardens</name>
+        <description><![CDATA[http://teien.tokyo-park.or.jp/contents/index032.html<br>入園料がかかります]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.81559,35.723857,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>武蔵国分寺公園／Musashikokubunji Park</name>
+        <description>http://musashinoparks.com/kouen/musasikoku/</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.472199,35.697146,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>武蔵野公園／Musashino Park</name>
+        <description>http://musashinoparks.com/kouen/musasino/</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.519166,35.688571,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>武蔵野中央公園／Musashino-Chuo Park</name>
+        <description>http://www.tokyo-park.or.jp/park/format/index059.html</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.558432,35.718094,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>武蔵野の森公園／Musashino-no-mori Park</name>
+        <description>https://www.tokyo-park.or.jp/park/format/index058.html</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.524254,35.673932,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>夢の島公園／Yumenoshima Park</name>
+        <description><![CDATA[http://www.yumenoshima.jp/park/<br>一部工事中の箇所あり]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.82649,35.649659,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>夢の島熱帯植物館／Yumenoshima Tropical Greenhouse Dome</name>
+        <description><![CDATA[http://www.yumenoshima.jp/botanicalhall/<br>入園料がかかります]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.828805,35.651206,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>横網町公園／Yokoamicho Park</name>
+        <description>http://tokyoireikyoukai.or.jp/</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.797004,35.699292,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>代々木公園／Yoyogi Park</name>
+        <description>http://www.tokyo-park.or.jp/park/format/index039.html</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.695449,35.671274,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>六義園／Rikugien Gardens</name>
+        <description><![CDATA[http://teien.tokyo-park.or.jp/contents/index031.html<br>入園料がかかります]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.746224,35.732546,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>陵南公園／Ryonan Park</name>
+        <description>https://tamaparks.com/ryonan/</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.288335,35.648987,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>林試の森公園／Rinshinomori Park</name>
+        <description>http://www.tokyo-park.or.jp/park/format/index003.html</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.702471,35.624974,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>蘆花恒春園／Roka Koshun-en Gardens</name>
+        <description>http://www.tokyo-park.or.jp/park/format/index007.html</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.61253,35.661803,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>六仙公園／Rokusen Park</name>
+        <description>http://musashinoparks.com/kouen/rokusen/</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.522741,35.749588,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>和田堀公園／Wadabori Park</name>
+        <description>http://www.tokyo-park.or.jp/park/format/index095.html</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.641134,35.684156,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>海上公園／Marine Parks</name>
+      <Placemark>
+        <name>有明テニスの森公園／Ariake Tennis Park</name>
+        <styleUrl>#icon-1899-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            139.787491,35.634977,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>有明西ふ頭公園／Ariake West Terminal Park</name>
+        <styleUrl>#icon-1899-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            139.794404,35.627311,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>青海北ふ頭公園／Aomi Kita Port Park</name>
+        <styleUrl>#icon-1899-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            139.773662,35.61887,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>青海中央ふ頭公園／Aomi Central Port Park</name>
+        <description>http://www.tptc.co.jp/park/01_07</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.780349,35.620759,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>青海南ふ頭公園／Aomi Minami Terminal Park</name>
+        <styleUrl>#icon-1899-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            139.778864,35.614833,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>青海緑道公園／Aomi Green Park</name>
+        <description>http://www.tptc.co.jp/park/01_08</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.780427,35.619812,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>暁ふ頭公園／Akatsuki Terminal Park</name>
+        <description>http://www.tptc.co.jp/park/01_10</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.7914,35.608165,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>有明北緑道公園／Ariake Kita Greenway</name>
+        <description>http://www.tptc.co.jp/park/02_06</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.782922,35.632475,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>大井ふ頭中央海浜公園スポーツの森／Oi Central Seaside Park Sports Forest</name>
+        <description><![CDATA[http://seaside-park.jp/park_ooisports/<br>一部工事中の箇所あり　　]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.751714,35.592256,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>大井ふ頭中央海浜公園なぎさの森／Oi Central Seaside Park Nagisa Forest</name>
+        <description>http://seaside-park.jp/park_nagisa/</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.749734,35.594186,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>大井ふ頭緑道公園／Oi Greenway</name>
+        <description>http://seaside-park.jp/otherpark/#otherP11</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.754521,35.596494,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>お台場海浜公園／Odaiba Marine Park</name>
+        <description>http://www.tptc.co.jp/park/01_02</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.776045,35.630737,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>葛西海浜公園／Kasai Seaside Park</name>
+        <description>http://www.tokyo-park.or.jp/park/format/index027.html</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.855131,35.638241,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>京浜運河緑道公園／Keihin Canal-side Greenway</name>
+        <description>http://seaside-park.jp/otherpark/#otherP09</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.75252,35.606247,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>京浜島つばさ公園／Keihinjima Tsubasa Park</name>
+        <description>http://seaside-park.jp/otherpark/#otherP04</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.770478,35.571013,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>京浜島ふ頭公園／Keihinjima Port Park</name>
+        <description>http://seaside-park.jp/otherpark/#otherP05</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.760513,35.57175,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>京浜島緑道公園／Keihinjima Greenway</name>
+        <description>http://seaside-park.jp/otherpark/#otherP13</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.75895,35.568238,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>コンテナふ頭公園／Container Terminal Park</name>
+        <description>http://seaside-park.jp/otherpark/#otherP02</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.761198,35.603902,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>品川北ふ頭公園／Shinagawa Kita Port Park</name>
+        <description>http://seaside-park.jp/otherpark/#otherP01</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.755134,35.63033,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>芝浦南埠頭公園／Shibaura Minami Port Park</name>
+        <description>http://seaside-park.jp/otherpark/#otherP14</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.760192,35.636963,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>城南島海浜公園／Jonanjima Seaside Park</name>
+        <description>http://seaside-park.jp/park_jonan/</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.783916,35.578356,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>城南島ふ頭公園／Jonanjima Port Park</name>
+        <description>http://seaside-park.jp/otherpark/#otherP06</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.772676,35.578688,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>城南島緑道公園／Jonanjima Greenway</name>
+        <description>http://seaside-park.jp/otherpark/#otherP12</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.778024,35.579586,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>新木場公園／Shinkiba Park</name>
+        <description>http://www.tptc.co.jp/park/03_04</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.823503,35.642082,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>新木場緑道公園／Shinkiba Green Park</name>
+        <description>http://www.tptc.co.jp/park/03_05</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.840441,35.640426,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>シンボルプロムナード公園／Symbol Prome-nade Park</name>
+        <description>http://www.tptc.co.jp/park/01_04</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.782606,35.627756,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>辰巳の森海浜公園／Tatsumi Seaside Park</name>
+        <description><![CDATA[http://www.tptc.co.jp/park/03_01<br>一部工事中の箇所あり]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.815722,35.648484,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>辰巳の森緑道公園／Tatsumi no Mori Green Park</name>
+        <description>http://www.tptc.co.jp/park/03_02</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.814328,35.64575,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>東海埠頭公園／Tokai Port Park</name>
+        <description>http://seaside-park.jp/otherpark/#otherP07</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.756327,35.57775,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>東海緑道公園／Tokai Greenway</name>
+        <description>http://seaside-park.jp/otherpark/#otherP08</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.754603,35.584841,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>東京港野鳥公園／Port of Tokyo Wild Bird Park</name>
+        <description><![CDATA[http://www.wildbirdpark.jp/<br>入園料がかかります]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.760308,35.583872,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>春海橋公園／Harumibashi Park</name>
+        <description>http://www.tptc.co.jp/park/02_02</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.792089,35.653477,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>晴海ふ頭公園／Harumi Terminal Park</name>
+        <description>http://www.tptc.co.jp/park/02_01　　　　　　　　　休園中</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.771154,35.647881,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>東八潮緑道公園／Higashi Yashio GreenWay</name>
+        <styleUrl>#icon-1899-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            139.771766,35.619576,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>水の広場公園／Mizu no Hiroba Park</name>
+        <description>http://www.tptc.co.jp/park/02_04</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.782704,35.625052,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>みなとが丘ふ頭公園／Minato-ga-oka-Port Park</name>
+        <description>http://seaside-park.jp/otherpark/#otherP03</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.762992,35.596426,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>夢の島緑道公園／Yume no Shima Green Park</name>
+        <description>http://www.tptc.co.jp/park/03_03</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.830314,35.647501,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>若洲海浜公園（ゴルフリンクス）／Wakasu Seaside Park(Wakasu Golf Links)</name>
+        <description>http://www.tptc.co.jp/park/03_07（http://wakasu.golftk.com/）</description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            139.837246,35.622301,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>
